@@ -1,0 +1,82 @@
+.featured {
+    flex: 2;
+    box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        &-title {
+            font-size: 18px;
+            color: grey;
+            font-weight: 600
+        }
+
+        .button {
+            cursor: pointer;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        .circle {
+            width: 140px;
+        }
+
+        .bottom-title {
+            color: grey;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .sale-counter {
+            font-size: 40px;
+        }
+
+        .bottom-text {
+            color: grey;
+            font-size: 14px;
+        }
+
+        .statistics {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+
+            .statistic {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+
+                &-title{
+                    color: grey;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                &-counter {
+                    display: flex;
+                    align-items: center;
+
+                    &.positive {
+                        color: green;
+                    }
+
+                    &.negative {
+                        color: red;
+                    }
+                }
+            }
+
+        }
+    }
+}
